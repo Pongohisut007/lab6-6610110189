@@ -26,18 +26,3 @@ jobs:
 
       - name: Run tests
         run: npm test              # รันคำสั่งเทส
-
-  deploy:
-    needs: build                  # เริ่ม deploy หลังจาก build สำเร็จ
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Login to Heroku
-        uses: akhileshns/heroku-deploy@v4.1.8
-        with:
-          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}    # ใช้ API Key จาก Secrets
-          heroku_app_name: "your-app-name"                # ชื่อแอปใน Heroku
-          heroku_email: "your-email@example.com"          # อีเมลบัญชี Heroku
