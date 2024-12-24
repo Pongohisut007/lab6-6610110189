@@ -1,0 +1,14 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",  // ใช้ Jest หรือ testing framework อื่นๆ
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"  // ใส่ dependency ที่ใช้ในโปรเจกต์
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"  // ถ้าใช้ Jest สำหรับการทดสอบ
+  }
+}
