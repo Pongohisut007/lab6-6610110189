@@ -1,14 +1,14 @@
 {
-  "name": "your-project-name",
+  "name": "nongao",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest",  // ใช้ Jest หรือ testing framework อื่นๆ
+    "test": "jest",
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^4.17.1"  // ใส่ dependency ที่ใช้ในโปรเจกต์
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "jest": "^29.0.0"  // ถ้าใช้ Jest สำหรับการทดสอบ
+    "jest": "^29.0.0"
   }
 }
